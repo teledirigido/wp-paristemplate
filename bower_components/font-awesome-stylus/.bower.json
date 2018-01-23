@@ -1,0 +1,23 @@
+{
+  "name": "font-awesome-stylus",
+  "version": "4.7.1",
+  "homepage": "https://github.com/raulghm/Font-Awesome-Stylus",
+  "authors": "Raul Hernandez",
+  "description": "Stylus port for font-awesome (bower component)",
+  "main": "./index.styl",
+  "keywords": [
+    "font awesome",
+    "font awesome stylus"
+  ],
+  "license": "MIT",
+  "_release": "4.7.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v4.7.1",
+    "commit": "9f7e7088436da60f49a0eb9603372381375e05ee"
+  },
+  "_source": "https://github.com/raulghm/Font-Awesome-Stylus.git",
+  "_target": "^4.7.1",
+  "_originalSource": "font-awesome-stylus",
+  "_direct": true
+}

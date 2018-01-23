@@ -1,0 +1,149 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,
+h5,h6,pre,form,fieldset,input,textarea,
+p,blockquote,th,td,figure,nav,main,video,
+button
+	margin:0; 
+	padding:0; 
+	box-sizing(border-box)
+	
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section
+	display: block
+
+h1,h2,h3,h4,h5,h6 
+	font-weight: normal 
+	line-height: textlh
+
+a 
+	text-decoration:none
+	outline:0 none
+	color:inherit
+
+a img 
+	border:0 none;
+
+hr 
+	border:0 none;
+	display:block;
+
+blockquote
+	margin-left:25px; 
+
+fieldset
+	border: none;
+
+input[type="submit"]
+	border:0 none; 
+
+.ul-horz
+	list-style none
+	& > li 
+		display:inline-block 
+		position:relative
+
+.ul-vert 
+	margin-left:0
+	list-style none
+
+.ul-vert li 
+	line-height: textlh
+
+.right, img.alignright 
+	float:right
+
+.left, img.alignleft
+	float:left
+
+.inline 
+	display:inline
+
+.inline-block 
+	display: inline-block
+
+.none, .ui-tabs-hide 
+	height:0 !important
+	width:0 !important
+	opacity:0
+	display:none !important
+
+.hide
+	text-indent: -9999999px
+
+.hidden
+	visibility:hidden
+
+.relative
+	position: relative
+
+.absolute
+	position: absolute
+
+.block
+	display: block
+	box-sizing:border-box
+
+.uppercase 
+	text-transform: uppercase
+
+.lowercase
+	text-transform: lowercase
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+		
+.nowrap
+	white-space:nowrap
+
+.whitenormal
+	white-space:normal
+	vertical-align:top
+	
+.vsub
+	vertical-align: sub
+	
+pre
+	display: inline-block
+	background-color:#f8f8f8
+	padding:0rem 0.5rem
+	border-radius 5px
+	border 1px solid rgba(black,0.15)
+	vertical-align middle
+	color black
+	@media mobile
+		white-space: pre-wrap; 
+		word-break break-all
+	
+button
+	border 0 none
+	box-shadow 0 none
+	font-size inherit
+	font-family inherit
+	&:focus
+		outline 0 none
+	&:hover
+		cursor pointer
+
+::selection 
+	background: black; 
+	color:white;
+
+::-moz-selection
+	background: #333; 
+	color:#fff; 
+	text-shadow:0 0 1px #333;
+
+// Verital Aligned content
+.table-wrap
+	display:table
+	width:100%
+	height:100%
+	.table-cell 
+		display: table-cell;
+		vertical-align:middle;
+
+.strong,
+.bold
+	font-weight bold

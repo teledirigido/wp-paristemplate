@@ -1,0 +1,72 @@
+/*!
+Theme Name: Wordpress, Stylus & Grunt template
+Theme URI: http://miguel.nz/template
+Author: Miguel Garrido
+Author URI: http://miguel.nz/
+Description: PHP, Stylus & Grunt template. Read more at www.miguel.nz/template
+Version: 1.0
+*/
+
+// Our boilerplate 
+@require 'stylus/base/default'
+
+// Variables, colors, functions, etc
+@require 'stylus/global'
+@require 'stylus/base/print.css'
+@require 'stylus/base/reset'
+
+html, body
+  margin:0
+  padding:0
+  min-height:100%
+  width:100%
+
+body
+  font-family:body-font
+  color: #111
+  font-size: 1rem
+  font-smooth: auto
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: greyscale
+  line-height textlh
+  @media mobile
+    min-width:rem(420px)
+  
+for i in 1 .. 10
+  .p{i}
+    padding unit(i,'rem')
+  .m{i}
+    margin unit(i,'rem')
+  .mt{i}
+    margin-top unit(i,'rem')
+  .mb{i}
+    margin-bottom unit(i,'rem')
+  .pt{i}
+    padding-top unit(i,'rem')
+  .pb{i}
+    padding-bottom unit(i,'rem')
+
+
+// Content
+.content-wrapper
+  div-wrapper(960px)
+  padding-top:2rem
+  padding-bottom:2rem
+
+.bgwhite a
+  color blue
+  text-decoration underline
+  
+// Components - Default
+@require 'stylus/components/grid'
+@require 'stylus/components/colours'
+
+// Partials
+@require 'stylus/components/entry-content'
+@require 'stylus/components/header'
+@require 'stylus/components/footer'
+@require 'stylus/components/index'
+@require 'stylus/components/forms'
+
+// Components - Externals
+@require 'bower_components/font-awesome-stylus/index'

@@ -1,0 +1,32 @@
+		
+@media print {
+
+	*{background-color:#fff!important;color:#000!important;box-shadow:none!important;text-shadow:none!important; padding:0; margin:0;}
+	
+	@page {
+        size: letter portrait;
+        margin:1rem;
+	}
+        
+	a,a:visited{ 
+		text-decoration:underline;
+	}
+	
+	html,
+	body {
+		margin:0!important;
+		padding:0!important;
+	}
+	
+	.article-nav .back,
+	.article-nav .print,
+	.main-sidebar-wrapper {
+		display: none!important;
+	}
+
+	.main-archives-singular .article-meta{
+		margin-bottom:1rem!important;
+	}
+		
+
+}

@@ -1,0 +1,18 @@
+// Colours
+white = #fff
+black = #333
+red =  darken(#FF0000,30%)
+blue = darken(#3A779C,20%)
+
+colors = {
+  white: white,
+  black: black,
+  red: red,
+  blue: blue
+}
+
+for key,value in colors
+  .bg{key}
+    background-color value
+  .{key}
+    color value

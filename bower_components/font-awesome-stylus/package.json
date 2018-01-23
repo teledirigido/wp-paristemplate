@@ -1,0 +1,19 @@
+{
+  "name": "font-awesome-stylus",
+  "version": "4.7.1",
+  "homepage": "https://github.com/raulghm/Font-Awesome-Stylus",
+  "authors": "Raul Hernandez",
+  "description": "Stylus port for font-awesome",
+  "main": "lib/font-awesome-stylus.js",
+  "scripts": {
+    "build": "stylus example/src/styles.styl --out example/dist/styles.css"
+  },
+  "keywords": [
+    "font awesome",
+    "font awesome stylus"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}

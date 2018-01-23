@@ -1,0 +1,24 @@
+# Don't add the Local settings file to the repository #
+wp-config.php
+wp-config-sample.php
+
+# SASS files
+# If using SASS to compile stylesheets this saves conflicts, plus there not needed! #
+.sass-cache/
+*.css.map
+*.js.map
+ 
+# GRUNT Files
+node_modules
+node_modules/*
+
+# sitemaps not needed locally #
+sitemap.*
+ 
+# no need for these #
+*[Tt]humbs.db
+readme.html
+license.txt
+.log
+.htaccess
+.DS_Store

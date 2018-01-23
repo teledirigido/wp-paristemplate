@@ -1,0 +1,80 @@
+.entry-content
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		padding-bottom 1.5rem
+	
+	p + h1,
+	p + h2,
+	p + h3,
+	p + h4,
+	p + h5,
+	p + h6
+		padding-top 0
+		
+	iframe
+		width 100%
+
+	img
+		max-width 100% 
+		height auto 
+		margin 1rem 0 
+		&.alignleft
+			margin-right 1rem
+		&.alignright
+			margin-left 1rem
+
+	p
+		color  inherit
+		line-height textlh
+		padding-bottom 1.5rem
+		&:last-of-type
+			margin-bottom  0
+	
+	a
+		word-break break-word
+
+	ol,
+	ul
+		padding-left 1rem
+		margin-top 0.5rem
+		padding-bottom 1.5rem
+		&:first-of-type
+			margin-top  0
+
+	ul
+		list-style-type  none
+		
+
+	ul li
+		position  relative
+		overflow  visible
+		padding-left 10px
+
+		&:before
+			content "-"
+			position absolute 
+			left -10px
+
+	ol li, 
+	ul li
+		line-height textlh
+		
+	h2 + ul,
+	h2 + ol,
+	h3 + ul,
+	h3 + ol,
+	h4 + ul,
+	h4 + ol,
+	h5 + ul,
+	h5 + ol,
+	h6 + ul,
+	h6 + ol 
+		margin-top 0
+		 
+	.wp-caption
+		max-width 100%

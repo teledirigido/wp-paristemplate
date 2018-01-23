@@ -1,0 +1,73 @@
+// top content for multiple headers
+// it might change with responsive
+body-font = 'Helvetica','Arial', sans-serif
+text-color = lighten(black,10%)
+textlh = 1.9
+
+title-font = 'Helvetica', Arial, sans-serif;
+title-fontlight = 'Helvetica',Arial, sans-serif;
+
+//============================================================
+// Font Awesome 4.7.0
+//============================================================
+
+$fa-font-path = 'bower_components/font-awesome-stylus/fonts'
+$fa-font-size-base = 1rem
+
+//============================================================
+// Font
+//============================================================
+
+p()
+	font-family: body-font
+	color: text-color
+	line-height: textlh
+	
+
+//============================================================
+// Wrappers
+//============================================================
+
+div-wrapper(value)
+	max-width: value
+	width: 100%
+	margin-left: auto
+	margin-right: auto
+	position: relative
+	// padding-left: 2rem
+	// padding-right: 2rem
+		
+	@media screen and ( max-width: (value+50)px )
+		padding-left: 2rem
+		padding-right: 2rem
+	
+	@media mobile
+		max-width: 492px
+		width: 100%
+		min-width: 320px
+
+absolute-full()
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%	
+	
+//============================================================
+// Media Queries
+//============================================================
+hd-layout 		= 1180px;
+desktop-layout 	= 960px;
+tablet-layout 	= 561px;
+mobile-layout 	= 560px;
+
+bigdesktop 		= 'all and (min-width: '+rem(hd-layout)+') not print'
+nonbigdesktop 	= 'all and (max-width: '+rem(hd-layout - 1px )+') not print'
+
+desktop 	= 'screen and (min-width: '+rem(desktop-layout)+')'
+nondesktop 	= 'screen and (max-width: '+rem(desktop-layout - 1px) +')'
+
+tablet 		= 'screen and (min-width: '+rem(tablet-layout)+') and (max-width:'+rem(desktop-layout - 1px)+')'
+
+mobile 		= 'screen and (max-width: '+rem(mobile-layout)+')'
+nonmobile 	= 'screen and (min-width: '+rem(tablet-layout)+')'
