@@ -13,4 +13,3 @@ include 'assets/post_type.php';
 
 // Misc Functions
 include 'assets/misc.php';
-
