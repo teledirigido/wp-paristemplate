@@ -1,0 +1,157 @@
+//============================================================
+// Grid System GRID
+//============================================================
+
+for i in 1 .. 4
+  .grid-{i}
+    display grid
+    grid-template-columns repeat(i, 1fr )
+    & > .item
+      width 100%
+
+@media mobile
+  for i in 1 .. 4
+    .grid-{i}
+      grid-template-columns repeat(1, 100% )
+    .grid-{i}--mobile
+      grid-template-columns repeat(i, 1fr )
+    
+
+@media desktop
+  for i in 1 .. 4
+    .grid-{i}--desktop
+      display grid
+      grid-template-columns repeat(i, 1fr )
+      & > .item
+        width 100%
+
+@media nondesktop
+  for i in 1 .. 4
+    .grid-{i}--nondesktop
+      display grid
+      grid-template-columns repeat(i, 1fr )
+      & > .item
+        width 100%
+    
+@media tablet
+  for i in 1 .. 2
+    .grid-{i}--tablet
+      grid-template-columns repeat(i, 1fr )
+
+@media mobile
+  for i in 1 .. 3
+    .grid-{i}--mobile
+      grid-template-columns repeat(i, 1fr )
+
+// GRID GAP
+for i in 1 .. 10
+  .grid-gap-{i}
+    grid-column-gap: unit(i,'rem');
+
+@media mobile
+  for i in 1 .. 3
+    .grid-gap-{i}--mobile
+      grid-column-gap: unit(i,'rem');
+    
+@media nondesktop
+  for i in 1 .. 10
+    if i >= 4
+      .grid-gap-{i}
+        grid-column-gap: unit( i - 1 ,'rem');
+
+//============================================================
+// Grid System FLEX
+//============================================================
+
+// Affects all flex DISABLED FOR NOW
+[class*="flex-"]
+  // flex-display()
+  // flex-flow wrap
+  // position relative
+  // any flex-N but without content-wrapper and gap added
+  &:not(.content-wrapper):not([class*="flex-gap-"])
+    max-width 100%
+
+for i in 2 .. 3
+  .flex-{i}
+    flex-display()
+    position relative
+
+@media nonmobile
+  for i in 2 .. 3
+    .flex-{i} 
+      flex-direction row
+      flex-flow wrap
+      & > .item
+        width (100/i)%
+
+@media mobile
+  for i in 2 .. 3
+    .flex-{i}
+      flex-direction: column
+      & > .item
+        width 100%
+
+@media tablet
+  for i in 2 .. 3
+    .flex-{i}-tablet
+      flex-display()
+      flex-flow wrap
+      position relative
+      &[class*="flex-gap-"]
+        margin-left 0
+        margin-right 0
+      & > .item
+        width (100/i)%
+
+for i in 1 .. 10
+  .flex-gap-{i}
+    margin-left unit(-(i),'rem')
+    margin-right unit(-(i),'rem')
+    & > .item
+      border-left unit(i,'rem') solid transparent
+      border-right unit(i,'rem') solid transparent
+
+.flex-column,
+.flex-row-separate
+  flex-display()
+  flex-flow wrap
+  position relative
+
+.flex-row-separate
+  flex-flow wrap
+  flex-direction row
+  justify-content space-between  
+      
+.flex-middle
+  align-items center
+
+.flex-top
+  align-items stretch
+
+.flex-separate
+  justify-content space-between
+
+.flex-jc--end
+  justify-content flex-end
+  
+.flex-column
+  flex-direction column
+
+.flex-row
+  flex-direction row
+
+.flex-row-reverse
+  flex-direction row-reverse
+
+.mleft-auto
+  margin-left: auto  
+  
+.mtop-auto
+  margin-top: auto
+
+.align-self-center
+  align-self: center
+
+.align-self-end
+  align-self: end

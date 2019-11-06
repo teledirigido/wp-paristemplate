@@ -1,0 +1,72 @@
+//============================================================
+// REM
+//============================================================
+
+font-size(value)
+	if (value is inherit)
+		return
+	else
+		font-size rem(value)
+		
+rem(value)
+	u = unit(value)
+	
+	if (u is 'px')
+		return unit(value/16, 'rem')
+	
+	else
+		return unit(value, u)
+
+//============================================================
+// Appearance
+//============================================================
+
+filter()
+	filter arguments
+	-webkit-filter arguments
+
+
+appearance()
+	-webkit-appearance arguments
+	-moz-appearance arguments
+	appearance arguments
+	
+//============================================================
+// Columns
+//
+// 	selector(2,,true)
+//
+//============================================================
+columns(count = 3, gap = 1rem , break = false )
+	-webkit-column-count count
+	-moz-column-count count
+	column-count count
+	-webkit-column-gap gap
+	-moz-column-gap gap
+	column-gap gap
+	
+	& ._cell
+		-webkit-transform translateZ(0) if break
+		-webkit-column-break-inside avoid if break
+		page-break-inside avoid if break
+		break-inside avoid-column if break
+
+//============================================================
+// Placeholder
+//
+// 	input
+//		+placeholder()
+//			values
+//
+//============================================================
+
+
+placeholder()
+	&::-webkit-input-placeholder
+		{block}
+	&:-moz-placeholder
+		{block}
+	&::-moz-placeholder
+		{block}
+	&:-ms-input-placeholder
+		{block}

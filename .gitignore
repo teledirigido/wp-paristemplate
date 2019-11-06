@@ -17,8 +17,14 @@ sitemap.*
  
 # no need for these #
 *[Tt]humbs.db
+*.log
 readme.html
 license.txt
 .log
 .htaccess
 .DS_Store
+
+# Yarn
+dist/
+yarn.lock
+mix-manifest.json

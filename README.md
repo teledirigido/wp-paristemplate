@@ -1,2 +1,4 @@
-# Wordpress, ACF, Stylus &amp; Grunt template
+# WP Paris Template 
+Laravel Mix, Stylus, ACF
+
 Documentation coming soon, like everything.

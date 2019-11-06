@@ -1,0 +1,137 @@
+.entry-content
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		font-family $title-font
+		padding-bottom 1.5rem
+		text-transform: uppercase
+		
+	hr
+		height 5px
+		background #f1f1f1
+		margin-bottom:2rem
+	
+	p + h1,
+	p + h2,
+	p + h3,
+	p + h4,
+	p + h5,
+	p + h6
+		padding-top 0
+		
+	iframe
+		width 100%
+
+	img
+		max-width 100% 
+		height auto 
+		margin 1rem 0 
+		&.alignleft
+			margin-right 1rem
+		&.alignright
+			margin-left 1rem
+
+	ol,
+	ul
+		padding-left 1rem
+		margin-top 0.5rem
+		padding-bottom 1.5rem
+		&:first-of-type
+			margin-top  0
+			
+	p
+		color  inherit
+		line-height textlh
+		padding-bottom 1.5rem
+		&:last-of-type
+			padding-bottom  0
+		&:last-of-type + *
+			margin-top:1.5rem
+	
+	a
+		word-break break-word
+
+
+	ul
+		list-style-type  none
+		
+
+	ul li
+		position  relative
+		overflow  visible
+		padding-left 10px
+
+		&:before
+			content "•"
+			position absolute 
+			left -10px
+
+	ol li, 
+	ul li
+		line-height textlh
+		
+	h2 + ul,
+	h2 + ol,
+	h3 + ul,
+	h3 + ol,
+	h4 + ul,
+	h4 + ol,
+	h5 + ul,
+	h5 + ol,
+	h6 + ul,
+	h6 + ol 
+		margin-top 0
+	
+	blockquote
+		border 2px solid #be4a8b
+		padding 1rem
+		margin:0 0 1.5rem 0
+		h1,h2,h3,h4,h5,h6
+			display: inline
+			padding-bottom:0.5rem
+			color pink
+			font-size 19px
+		p
+			display: inline
+			font-size 1rem
+		
+	.wp-caption
+		max-width 100%
+	.blocks-gallery-item,
+	.wp-block-image
+		margin-bottom: 0
+		img
+			display: block
+			margin-top:0
+			margin-bottom: 0
+			
+	ul.wp-block-gallery
+		padding-left: 0
+		li
+			padding-left:0
+			&:before
+				display: none
+	.wp-block-gallery .blocks-gallery-image, 
+	.wp-block-gallery .blocks-gallery-item
+		figure
+			flex-direction column
+		img
+			display: block
+		figcaption
+			display block
+			padding 0
+			position relative
+			background none
+			color #555d66
+			padding-top:0.5rem
+			padding-bottom:1rem
+
+.entry-columns-2
+	columns(2,2rem)
+
+.entry-columns-1--mobile
+	@media mobile
+		columns(1,2rem)

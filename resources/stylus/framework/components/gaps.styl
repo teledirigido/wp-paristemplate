@@ -1,0 +1,51 @@
+for i in 1 .. 10
+  .p{i}
+    padding unit(i,'rem')
+  .m{i}
+    margin unit(i,'rem')
+  .mt{i}
+    margin-top unit(i,'rem')
+  .mb{i}
+    margin-bottom unit(i,'rem')
+  .pt{i}
+    padding-top unit(i,'rem')
+  .pr{i}
+    padding-right unit(i,'rem')
+  .pb{i}
+    padding-bottom unit(i,'rem')
+.pt0
+  padding-top: 0
+.pt05
+  padding-top: 0.5rem
+.pb05
+  padding-bottom: 0.5rem
+@media nondesktop
+  for i in 1 .. 3
+    .p{i}--nondesktop
+      padding unit(i,'rem')
+    .pb{i}--nondesktop
+      padding-bottom unit(i,'rem')
+@media nonmobile
+  for i in 1 .. 3
+    .pb{i}--nonmobile
+      padding-top unit(i,'rem')
+@media tablet
+  for i in 1 .. 3
+    .p{i}--tablet
+      padding unit(i,'rem')
+    .pt{i}--tablet
+      padding-top unit(i,'rem')
+@media mobile
+  for i in 1 .. 3
+    .p{i}--mobile
+      padding unit(i,'rem')
+    .pt{i}--mobile
+      padding-top unit(i,'rem')
+    .pb{i}--mobile
+      padding-bottom unit(i,'rem')
+@media responsivemenu
+  for i in 1 .. 3
+    .p{i}--responsivemenu
+      padding unit(i,'rem')
+.mtauto
+  margin-top: auto

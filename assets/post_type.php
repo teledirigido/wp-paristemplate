@@ -24,6 +24,10 @@
     *
     **/
 
+if (class_exists('post_type_register') ) {
+    return false;
+}
+
 class post_type_register {
 
     private $plural;
