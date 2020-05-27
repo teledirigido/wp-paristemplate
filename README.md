@@ -23,7 +23,7 @@ This is a Wordpress starter theme that uses Laravel Mix, Stylus, ACF and modern 
 ### /static
 `/fonts`: Custom fonts.  
 
-## Stylus folder `/stylus`
+## Stylus folder `/resources/stylus`
 The stylus folder has a `base`, `components` and `page` folder.
   
 `global.styl`: Theme's global variables  
@@ -55,6 +55,6 @@ For page styles only. Follow the wordpress name nomenclature.
   
 `front-page.styl`: Front Page Styles
 
-## Scripts folder `/scripts`
+## Scripts folder `/resources/scripts`
 
 *Documentation coming soon*
