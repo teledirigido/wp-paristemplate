@@ -3,9 +3,9 @@
 This is an opinionated Wordpress starter theme that uses Laravel Mix, Stylus, ACF and modern JS. Includes postcss, several polyfills, utility wordpress actions and filters that will help you to start crafting your wordpress themes right away.
 
 ## Getting Started
-1. Clone this repo under `wp-content/themes/your-theme`.  
-2. Install your dependencies: `$ yarn install`.  
-3. Watch your files via `$ yarn run watch`.  
+1. Clone this repo under `wp-content/themes/your-theme`  
+2. Install your dependencies: `$ yarn install`  
+3. Watch your files via `$ yarn run watch`  
 4. Start creating your beautiful Wordpress website.  
 
 ## File & Folder Structure
