@@ -1,0 +1,17 @@
+//============================================================
+// Media Queries
+//============================================================
+
+bigdesktop    = 'all and (min-width: '+ unit(bigdesktop-layout, 'px') +') not print'
+nonbigdesktop   = 'all and (max-width: '+ unit(bigdesktop-layout - 1, 'px') +') not print'
+
+desktop   = 'screen and (min-width: '+ unit(desktop-layout, 'px') +')'
+nondesktop  = 'screen and (max-width: '+ unit(desktop-layout - 1, 'px') +')'
+
+tablet    = 'screen and (min-width: '+ unit(tablet-layout, 'px') +') and (max-width:'+ unit(desktop-layout - 1, 'px') +')'
+
+mobile    = 'screen and (max-width: '+ unit(mobile-layout, 'px') +')'
+nonmobile   = 'screen and (min-width: '+ unit(tablet-layout, 'px') +')'
+
+mobilemenu  = 'all and (max-width: '+995px+')'
+nonmobilemenu   = 'all and (min-width: '+996px+')'

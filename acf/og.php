@@ -31,7 +31,11 @@ class open_graph {
   // URL
   public static function _get_url(){
     global $post;
-      return get_the_permalink($post->ID);
+    $permalink = false;
+    if ($post) {
+      $permalink = get_the_permalink($post->ID);
+    }
+    return $permalink;
   }
 
 
@@ -133,7 +137,7 @@ if( function_exists('acf_add_local_field_group') ):
         array (
           'param' => 'post_type',
           'operator' => '==',
-          'value' => 'news',
+          'value' => 'events',
         ),
       ),
       array (

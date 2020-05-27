@@ -1,5 +1,5 @@
 /*!
-Theme Name: WP Paris Template (Framework)
+Theme Name: WP Paris Template (Boilerplate)
 Theme URI: http://miguel.nz/template
 Author: Miguel Garrido
 Author URI: http://miguel.nz/
@@ -7,22 +7,21 @@ Description: Laravel Mix, Stylus, ACF
 Version: 1.0
 */
 
-// Framework
-@require 'stylus/framework/index'
+// Base
+@require 'stylus/base/index'
 
 // Variables, colors, functions, etc
 @require 'stylus/global'
 
-
 // Layout
-@require 'stylus/layouts/base'  
-
-// Components
-@require 'stylus/components/colours'
+@require 'stylus/layout'
 
 // Partials
+@require 'stylus/components/colours'
 @require 'stylus/components/entry-content'
 @require 'stylus/components/header'
 @require 'stylus/components/footer'
-@require 'stylus/components/index'
 @require 'stylus/components/forms'
+
+// Pages
+@require 'stylus/pages/front-page'

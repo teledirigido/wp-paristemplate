@@ -7,11 +7,23 @@ function register_custom_css_scripts(){
 
   wp_deregister_script('wp-embed');
 
-  // Styles
+  /**
+   * 1. Load STYLES
+   * @param wp_enqueue_style( $handle, '', array( '' ), false, 'all' );
+  **/
   wp_enqueue_style('style-default', get_stylesheet_uri(), __FILE__, '1.0', 'all' );
   
-  // Scripts
+  /**
+   * 2.1 Register SCRIPTS
+   * @param wp_register_script( $handle, $src, array( '' ), false, false );
+  **/
   wp_register_script('scripts', get_stylesheet_directory_uri() . '/dist/scripts/scripts.js',  __FILE__, false, true );
+  
+  /**
+   * 2.2 Load SCRIPTS
+   * @see wp_enqueue_script($handle);
+  **/
+  wp_enqueue_script('scripts');
 
   $arrayParams = array(
     'nonce' => wp_create_nonce('wp_rest'),
@@ -19,8 +31,6 @@ function register_custom_css_scripts(){
   if(isset($_REQUEST['X-WP-Nonce'])) {
     $arrayParams['nonce_verify'] = wp_verify_nonce($_REQUEST['X-WP-Nonce'], 'wp_rest');
   }
-  // wp_localize_script('scripts', 'params', $arrayParams);
-  wp_enqueue_script('scripts');
   
 }
 

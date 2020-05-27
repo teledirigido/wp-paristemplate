@@ -6,6 +6,7 @@ for i in 1 .. 4
   .grid-{i}
     display grid
     grid-template-columns repeat(i, 1fr )
+    grid-template-rows: auto;
     & > .item
       width 100%
 
@@ -13,8 +14,10 @@ for i in 1 .. 4
   for i in 1 .. 4
     .grid-{i}
       grid-template-columns repeat(1, 100% )
-    .grid-{i}--mobile
+      grid-template-rows: auto;
+    .grid-{i}-mobile
       grid-template-columns repeat(i, 1fr )
+      grid-template-rows: auto;
     
 
 @media desktop
@@ -22,6 +25,7 @@ for i in 1 .. 4
     .grid-{i}--desktop
       display grid
       grid-template-columns repeat(i, 1fr )
+      grid-template-rows: auto;
       & > .item
         width 100%
 
@@ -30,6 +34,7 @@ for i in 1 .. 4
     .grid-{i}--nondesktop
       display grid
       grid-template-columns repeat(i, 1fr )
+      grid-template-rows: auto;
       & > .item
         width 100%
     
@@ -37,11 +42,13 @@ for i in 1 .. 4
   for i in 1 .. 2
     .grid-{i}--tablet
       grid-template-columns repeat(i, 1fr )
+      grid-template-rows: auto;
 
 @media mobile
   for i in 1 .. 3
     .grid-{i}--mobile
       grid-template-columns repeat(i, 1fr )
+      grid-template-rows: auto;
 
 // GRID GAP
 for i in 1 .. 10

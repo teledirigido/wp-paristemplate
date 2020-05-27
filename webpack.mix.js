@@ -1,12 +1,11 @@
-let mix = require('laravel-mix');
-require('laravel-mix-purgecss');
-// let proxy = require('http-proxy-middleware') // require('http-proxy-middleware');
-
-const startPath = '/your-path';
+const startPath = 'testing/paristemplatesite';
 const viewsFolder = '.';
 const assetsFolder = 'resources';
-const publicFolder = 'dist'
-const staticFolder = 'static'
+const publicFolder = 'dist';
+const staticFolder = 'static';
+
+let mix = require('laravel-mix');
+let mediaQueries = require(`./${assetsFolder}/scripts/mediaQueries`);
 
 const browserSyncOptions = {
   proxy: 'localhost',
@@ -23,6 +22,19 @@ const browserSyncOptions = {
    // middleware: [proxyBaseURL]
 };
 
+const screenSizes = function(style){
+  style.define('bigdesktop-layout', mediaQueries()['bigdesktop-layout']);
+  style.define('mobilemenu-layout', mediaQueries()['mobilemenu-layout']);
+  style.define('desktop-layout', mediaQueries()['desktop-layout']);
+  style.define('tablet-layout', mediaQueries()['tablet-layout']);
+  style.define('mobile-layout', mediaQueries()['mobile-layout']);
+};
+
+const autoprefixerOptions = {
+  browserList: ['> 5%'],
+  grid: 'autoplace'
+};
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -33,6 +45,13 @@ const browserSyncOptions = {
  | file for your application, as well as bundling up your JS files.
  |
  */
+
+ mix.options({
+  processCssUrls: false,
+  postCss: [
+    require('autoprefixer')(autoprefixerOptions),
+  ],
+});
 
 if (!mix.inProduction()) {
   mix.webpackConfig({
@@ -47,15 +66,12 @@ mix.stylus(
   `${assetsFolder}/style.styl`, 
   `style.css`, {
     use: [
-      require('font-awesome-stylus')()
+      require('font-awesome-stylus')(),
+      screenSizes
     ]
-  }).options({
-  processCssUrls: false,
-  autoprefixer: {
-    options: {
-      browsers: ['> 0.5%']
-    }
-  }
+  })
+.options({
+  processCssUrls: false
 });
 
 
