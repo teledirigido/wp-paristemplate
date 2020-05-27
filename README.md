@@ -4,7 +4,7 @@ Laravel Mix, Stylus, ACF
 Documentation coming soon, like everything.
 `wp-paristemplate` is a Wordpress boilerplate ready to work.
 
-## Structure
+## File & Folder Structure
 
 ### /acf
 `googlemaps.php`: Google Maps api key.  
@@ -32,16 +32,29 @@ The stylus folder has a `base`, `components` and `page` folder.
 `layout.styl`: Theme's style layout  
 
 #### `/base`
-`default.styl`  
-`gaps.styl`  
-`grid.styl`  
-`index.styl`  
-`media-queries.styl`  
+Base boilerplate.
+`index.styl`
+`default.styl`: Default mixins and functions.  
+`gaps.styl`: Padding and Margin gaps.  
+`grid.styl`: Grid and flex styles.  
+`media-queries.styl`: Your mediaqueries, variables are aread from `scripts/mediaQueries.js`  
 `print.css`: Soon to be deprecated  
-`reset.css`
+`reset.css`: Reset styles
 
 #### `/components`
-For components elements, reusable througout the interface
+For reusable component elements througout your interfaces.  
+Intented to be modified and filled with your own development.  
+
+`colours.styl`: Colour and background colour styles 
+`entry-content.styl`: Blog post styles
+`footer.styl`: Footer styles
+`forms.styl`: Forms styles
+`header.styl`: Header styles
 
 #### `/pages`
-For page styles only
+For page styles only. Follow the wordpress name nomenclature.  
+`front-page.styl`: Front Page Styles
+
+## Scripts folder `/scripts`
+
+*Documentation coming soon*
