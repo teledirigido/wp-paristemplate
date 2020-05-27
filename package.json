@@ -1,7 +1,7 @@
 {
   "name": "WP-ParisTemplate",
   "license" : "(ISC OR GPL-3.0)",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "dev": "yarn run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -11,22 +11,26 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "2.0.1",
-    "cross-env": "^5.2.0",
+    "cross-env": "^7.0.1",
     "http-proxy-middleware": "^0.19.1",
-    "laravel-mix": "^4.0.15",
+    "laravel-mix": "^5.0.0",
     "laravel-mix-purgecss": "^4.1.0",
     "resolve-url-loader": "2.3.1",
-    "stylus": "^0.54.5",
+    "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "font-awesome-stylus": "^4.7.1",
     "smoothscroll-polyfill": "^0.4.3",
     "stickyfilljs": "^2.1.0",
-    "swiper": "^4.5.0"
+    "swiper": "^5.3.6",
+    "web-animations-js": "^2.3.2",
+    "formdata-polyfill": "^3.0.13",
+    "promise-polyfill": "8.1.0",
+    "smoothscroll-polyfill": "^0.4.3"
   }
 }
