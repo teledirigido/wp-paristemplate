@@ -43,11 +43,11 @@ Base boilerplate.
 For reusable component elements througout your interfaces.  
 Intented to be modified and filled with your own development.  
 
-`colours.styl`: Colour and background colour styles 
-`entry-content.styl`: Blog post styles
-`footer.styl`: Footer styles
-`forms.styl`: Forms styles
-`header.styl`: Header styles
+`colours.styl`: Colour and background colour styles  
+`entry-content.styl`: Blog post styles  
+`footer.styl`: Footer styles  
+`forms.styl`: Forms styles  
+`header.styl`: Header styles  
 
 #### `/pages`
 For page styles only. Follow the wordpress name nomenclature.  
