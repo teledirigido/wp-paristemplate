@@ -3,23 +3,17 @@
 if( function_exists('acf_add_options_page') ):
 
   $parent = acf_add_options_page(array(
-    'page_title'  => 'Julie Rollinson',
-    'menu_title'  => 'Julie Rollinson',
-    'menu_slug'   => 'theme-general-settings',
+    'page_title'  => 'Page title',
+    'menu_title'  => 'Menu Title',
+    'menu_slug'   => 'page-title-slug',
     'capability'  => 'edit_posts',
     'redirect'    => false
   ));
 
   acf_add_options_sub_page(array(
-    'page_title'  => 'Free E-book',
-    'menu_title'  => 'Free E-book',
+    'page_title'  => 'Sub Page 1',
+    'menu_title'  => 'Sub Page 1',
     'parent_slug'   => $parent['menu_slug'],
   ));
-
-  // acf_add_options_sub_page(array(
-  //   'page_title'  => 'Bio',
-  //   'menu_title'  => 'Bio',
-  //   'parent_slug'   => $parent['menu_slug'],
-  // ));
   
 endif;
