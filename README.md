@@ -25,12 +25,13 @@ This is a Wordpress starter theme that uses Laravel Mix, Stylus, ACF and modern 
 
 ## Stylus folder `/stylus`
 The stylus folder has a `base`, `components` and `page` folder.
-
+  
 `global.styl`: Theme's global variables  
 `layout.styl`: Theme's style layout  
 
 #### `/base`
 Base boilerplate.
+  
 `index.styl`
 `default.styl`: Default mixins and functions.  
 `gaps.styl`: Padding and Margin gaps.  
@@ -42,7 +43,7 @@ Base boilerplate.
 #### `/components`
 For reusable component elements througout your interfaces.  
 Intented to be modified and filled with your own development.  
-
+  
 `colours.styl`: Colour and background colour styles  
 `entry-content.styl`: Blog post styles  
 `footer.styl`: Footer styles  
@@ -51,6 +52,7 @@ Intented to be modified and filled with your own development.
 
 #### `/pages`
 For page styles only. Follow the wordpress name nomenclature.  
+  
 `front-page.styl`: Front Page Styles
 
 ## Scripts folder `/scripts`
