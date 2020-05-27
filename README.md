@@ -1,8 +1,6 @@
 # WP Paris Template 
-Laravel Mix, Stylus, ACF
 
-Documentation coming soon, like everything.
-`wp-paristemplate` is a Wordpress boilerplate ready to work.
+WP Paris template is a Wordpress starter theme that uses Laravel Mix, Stylus, ACF and modern JS. Includes several pollifills, utility wordpress actions and filters that will help you to start crafting your wordpress themem right away.
 
 ## File & Folder Structure
 
