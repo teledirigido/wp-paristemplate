@@ -17,7 +17,7 @@ This is an opinionated Wordpress starter theme that uses Laravel Mix, Stylus, AC
 `option_page.php`: Option page sample.  
 
 ### /inc
-`autoload.php`: Autoload your own classes
+`autoload.php`: Autoload your own classes.  
 `misc.php`: Misc actions and filters: theme_support, image_size, etc.  
 `post_type.php`: Add post types programatically.  
 `scripts.php`: Register scripts and Styles.  
