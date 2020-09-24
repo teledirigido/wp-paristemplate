@@ -32,7 +32,7 @@ This is an opinionated Wordpress starter theme that uses Laravel Mix, Stylus, AC
 ### /resources
 `/scripts`: JS Scripts.  
 `/stylus`: Stylus boilerplate.  
-`/stylus/style.styl`: Base style layout. Exported as `style.css` on your theme base.
+`/stylus/style.styl`: Base style layout. Exported as `style.css` on your theme base.  
 
 ### /static
 `/fonts`: Custom fonts.  
