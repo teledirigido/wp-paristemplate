@@ -22,7 +22,7 @@ This is an opinionated Wordpress starter theme that uses Laravel Mix, Stylus, AC
 `post_type.php`: Add post types programatically.  
 `scripts.php`: Register scripts and Styles.  
 `wp_footer.php`: Useful info and data for your footer.  
-`post_types`: Easily register your own post post types.
+`post_types.php`: Easily register your own post post types.
 `taxonomies.php`: Easily register your own taxonomies.
 
 ### /inc/classes
