@@ -9,11 +9,18 @@ This is an opinionated Wordpress starter theme that uses Laravel Mix, Stylus, AC
 `og.php`: Open Graph meta tags for posts and pages, customisable.  
 `option_page.php`: Option page sample.  
 
-### /assets
+### /inc
+`autoload.php`: Autoload your own classes
 `misc.php`: Misc actions and filters: theme_support, image_size, etc.  
 `post_type.php`: Add post types programatically.  
 `scripts.php`: Register scripts and Styles.  
 `wp_footer.php`: Useful info and data for your footer.  
+`post_types`: Easily register your own post post types.
+`taxonomies.php`: Easily register your own taxonomies.
+
+### /inc/classes
+`PostTypeRegister.php`: Post Type register wrapper Class
+`TaxonomyRegister.php`: Taxonomy register wrapper Class
 
 ### /resources
 `/scripts`: JS Scripts.  
