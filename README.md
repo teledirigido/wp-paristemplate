@@ -26,8 +26,8 @@ This is an opinionated Wordpress starter theme that uses Laravel Mix, Stylus, AC
 `taxonomies.php`: Easily register your own taxonomies.  
 
 ### /inc/classes
-`PostTypeRegister.php`: Post Type register wrapper Class
-`TaxonomyRegister.php`: Taxonomy register wrapper Class
+`PostTypeRegister.php`: Post Type register wrapper Class.  
+`TaxonomyRegister.php`: Taxonomy register wrapper Class.  
 
 ### /resources
 `/scripts`: JS Scripts.  
