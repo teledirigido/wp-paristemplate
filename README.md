@@ -19,11 +19,10 @@ This is an opinionated Wordpress starter theme that uses Laravel Mix, Stylus, AC
 ### /inc
 `autoload.php`: Autoload your own classes.  
 `misc.php`: Misc actions and filters: theme_support, image_size, etc.  
-`post_type.php`: Add post types programatically.  
 `scripts.php`: Register scripts and Styles.  
 `wp_footer.php`: Useful info and data for your footer.  
-`post_types.php`: Easily register your own post post types.  
-`taxonomies.php`: Easily register your own taxonomies.  
+`post_types.php`: Easily register your own post post types programatically.  
+`taxonomies.php`: Easily register your own taxonomies programatically.  
 
 ### /inc/classes
 `PostTypeRegister.php`: Post Type register wrapper Class.  
