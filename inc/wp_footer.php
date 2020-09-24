@@ -31,4 +31,5 @@ add_action('wp_footer', function(){
       href="<?php echo get_stylesheet_directory_uri() ?>/favicons/favicon.png">
   
   <?php
+  
 });

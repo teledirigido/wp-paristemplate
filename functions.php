@@ -1,15 +1,14 @@
 <?php
+include 'inc/autoload.php';
 
-include 'assets/scripts.php';
-include 'assets/wp_footer.php';
+require_once 'inc/scripts.php';
+require_once 'inc/wp_footer.php';
+require_once 'inc/misc.php';
+require_once 'inc/post_types.php';
+require_once 'inc/taxonomies.php';
 
 // ACF
-include 'acf/og.php';
-include 'acf/options_page.php';
-include 'acf/googlemaps.php';
+require_once 'acf/og.php';
+require_once 'acf/options_page.php';
+require_once 'acf/googlemaps.php';
 
-// Registering Post Types
-include 'assets/post_type.php';
-
-// Misc Functions
-include 'assets/misc.php';

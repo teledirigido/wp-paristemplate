@@ -35,10 +35,11 @@ function register_custom_css_scripts(){
 }
 
 // remove wp version param from any enqueued scripts
-function vc_remove_wp_ver_css_js( $src ) {
+function remove_scripts_css_versions( $src ) {
     if ( strpos( $src, 'ver=' . get_bloginfo( 'version' ) ) )
         $src = remove_query_arg( 'ver', $src );
     return $src;
 }
-add_filter( 'style_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
-add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
+
+add_filter( 'style_loader_src', 'remove_scripts_css_versions', 9999 );
+add_filter( 'script_loader_src', 'remove_scripts_css_versions', 9999 );
