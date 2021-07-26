@@ -23,11 +23,11 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "font-awesome-stylus": "^4.7.1",
     "smoothscroll-polyfill": "^0.4.3",
     "stickyfilljs": "^2.1.0",
-    "swiper": "^5.3.6",
+    "swiper": ">=6.5.1",
     "web-animations-js": "^2.3.2",
     "formdata-polyfill": "^3.0.13",
     "promise-polyfill": "8.1.0",
