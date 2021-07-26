@@ -1,4 +1,5 @@
 <?php
+
 include 'inc/autoload.php';
 
 require_once 'inc/scripts.php';

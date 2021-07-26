@@ -26,11 +26,13 @@ add_action( 'after_setup_theme', function() {
 
 // Add Title tag support
 add_theme_support( 'title-tag' );
+add_theme_support( 'menus' );
 
 // Remove unused functions
 remove_filter('template_redirect', 'redirect_canonical');
 remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
+remove_action('wp_head', 'wp_generator'); 
 
 // Remove styles from Contact Form 7
 add_action( 'wp_enqueue_scripts', 'wap8_wpcf7_css', 10 );
