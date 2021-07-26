@@ -42,11 +42,11 @@ mix.options({
   ],
 });
 
-if (!mix.inProduction()) {
-  mix.webpackConfig({
-    devtool: 'inline-source-map'
-  })
-}
+// if (!mix.inProduction()) {
+//   // mix.webpackConfig({
+//   //   devtool: 'inline-source-map'
+//   // })
+// }
 
 mix.sourceMaps()
 

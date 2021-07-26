@@ -9,6 +9,18 @@ This is an opinionated Wordpress starter theme that uses Laravel Mix, Stylus, AC
 4. Watch your files via `$ yarn run watch`  
 5. Start creating your beautiful Wordpress website.  
 
+## Plugins & Polyfills
+
+- Laravel Mix v6.0  
+- Swiper v6.5.1
+- Axios v0.21.1
+- Font Awesome Stylus v4.7.1
+- Web Animations JS Polyfill v2.3.2
+- Formdata Polyfill v3.0.13
+- Promise Polyfill v8.1.0
+- Smoothscroll Polyfill v0.4.3
+- Stickyfill JS v2.1.0
+
 ## File & Folder Structure
 
 ### /acf
