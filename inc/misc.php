@@ -34,6 +34,13 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('wp_head', 'wp_generator'); 
 
+/** 
+ * Remove globel styles
+ * @see https://github.com/WordPress/gutenberg/issues/36834
+ **/
+remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
+remove_action( 'wp_footer', 'wp_enqueue_global_styles', 1 );
+
 // Remove styles from Contact Form 7
 add_action( 'wp_enqueue_scripts', 'wap8_wpcf7_css', 10 );
 function wap8_wpcf7_css() {
