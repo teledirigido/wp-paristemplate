@@ -17,6 +17,7 @@ const browserSyncOptions = {
     `${publicFolder}/scripts/*.js`,
     `style.css`,
     `${publicFolder}/**/*.css`,
+    `${viewsFolder}/*.php`,
     `${viewsFolder}/**/*.php`,
   ],
    // middleware: [proxyBaseURL]
